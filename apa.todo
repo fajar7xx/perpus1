@@ -1,0 +1,35 @@
+video yang sudah d tonotn :
+ ✔ video 1 @done (18-11-09 16:27)
+ ✔ video 2 @done (18-11-09 16:27)
+ ✔ video 3 sampai 23:52 tentang tambah data @done (18-11-10 11:27)
+ ✔ video 4 edit buku @done (18-11-10 11:50)
+ ✔ video 5 lanjutan edit data dan hapus data buku @done (18-11-10 13:59)
+ ✔ video 6 @done (18-11-10 14:01)
+ ✔ video 7 @done (18-11-10 14:21)
+ ✔ video 8 menit 02:02 tampilan anggota @done (18-11-12 12:49)
+ ✔ video 9 @done (18-11-12 13:09)
+ ✔ video 10 @done (18-11-12 13:09)
+ ✔ video 10 @done (18-11-22 09:11)
+ ✔ video 11 @done (18-11-22 09:48)
+ ✔ video 12 tambah transaksi @done (18-11-22 10:33)
+ ✔ video 13 tambah transaksi cek stok dan berikan alert jika stok buku habis @done (18-11-24 11:17)
+ ✔ video 13 bag 2 transaksi simpan lanjutan @done (18-11-24 13:25)
+ ✔ video 14 fitur perpanajng buku dan pengembalian buku @done (18-11-26 18:07)
+ ☐ video 15
+ ☐ video 16
+ ☐ video 17
+ ☐ video 18
+ ☐ video 19
+
+ rancangan database :
+   ✔ buku @done (18-11-10 14:00)
+   ✔ transaksi @done (18-11-22 09:57)
+   ✔ anggota ( perbaiki primary key menjadi UUID pada id_anggota sedangkan nim adalah nilai keduanya sebagai patokan dan tidak bisa d gantikan lagi nilainya tetap) @done (18-11-22 09:57)
+   ☐ user ( untuk login pada sistem)
+ 
+ permasalahan :
+   ✔ pada menu tambah buku "Column count doesn't match value count at row 1" @done (18-11-10 11:05)
+   ✔ pada menu tambah transaksi tampilkan data dengan sql join setalah itu masukkan dengan sql baru jadi ada dua sql yang berjalan sql_join untuk tampilkan data, sql tambah (untuk masukkan data baru) . kemungkinan satukan semua nya d mysql phpmyadmin, lihat contih refrensi db influencer contoh menggunakan ID semua yaitu UUID @done (18-11-22 09:48)
+   ✔ permasalahan perhitungan selisih terlambat yang ada @done (18-11-22 09:58)
+   ✔ pada transaksi/tambah.php ada permasalah pada cek transaksi @done (18-11-24 11:17)
+   ✔ pada menu simpan transaksi data belum bsia di simpan dan bagaimana data dapat dapat di update pada bagian buku - jumlah buku berkurang @done (18-11-24 13:25)
