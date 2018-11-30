@@ -1,5 +1,6 @@
 {
     "require": {
-        "ramsey/uuid": "^3.8"
+        "ramsey/uuid": "^3.8",
+        "spipu/html2pdf": "^5.2"
     }
 }

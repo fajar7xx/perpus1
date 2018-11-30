@@ -70,7 +70,7 @@ $sql_transaksi = mysqli_query($koneksi, $query_transaksi) or die(mysqli_error($k
         <td class="text-center"><?=$data['status'];?></td>
         <td class="text-center">
           <a class="btn btn-outline-info btn-sm" href="?page=transaksi&aksi=kembali&id=<?=$data['id_transaksi'];?>&buku=<?=$data['id_buku'];?>" role="button">Kembali</a>
-          <a class="btn btn-outline-danger btn-sm" href="?page=transaksi&aksi=perpanjang&id=<?=$data['id_transaksi'];?>&buku=<?=$data['id_buku'];?>" role="button" onclick="return confirm('Apakah anda yakin untuk memperpanjang peminjaman buku  ?')">Perpanjang</a>
+          <a class="btn btn-outline-danger btn-sm" href="?page=transaksi&aksi=perpanjang&id=<?=$data['id_transaksi'];?>&buku=<?=$data['id_buku'];?>&lambat=<?=$lambat;?>&kembali=<?=$data['tgl_kembali'];?>" role="button" onclick="return confirm('Apakah anda yakin untuk memperpanjang peminjaman buku  ?')">Perpanjang</a>
         </td>
       </tr>
       <?php  

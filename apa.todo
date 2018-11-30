@@ -8,6 +8,7 @@ video yang sudah d tonotn :
  ✔ video 7 @done (18-11-10 14:21)
  ✔ video 8 menit 02:02 tampilan anggota @done (18-11-12 12:49)
  ✔ video 9 @done (18-11-12 13:09)
+ 
  ✔ video 10 @done (18-11-12 13:09)
  ✔ video 10 @done (18-11-22 09:11)
  ✔ video 11 @done (18-11-22 09:48)
@@ -15,17 +16,17 @@ video yang sudah d tonotn :
  ✔ video 13 tambah transaksi cek stok dan berikan alert jika stok buku habis @done (18-11-24 11:17)
  ✔ video 13 bag 2 transaksi simpan lanjutan @done (18-11-24 13:25)
  ✔ video 14 fitur perpanajng buku dan pengembalian buku @done (18-11-26 18:07)
- ☐ video 15
- ☐ video 16
- ☐ video 17
- ☐ video 18
- ☐ video 19
+ ✔ video 15 @done (18-11-27 12:08)
+ ✔ video 16 export laporan ke excel @done (18-11-27 12:29)
+ ☐ video 17 export ke pdf
+ ✔ video 18 @done (18-11-30 16:35)
+ ✔ video 19 @done (18-11-30 17:01)
 
  rancangan database :
    ✔ buku @done (18-11-10 14:00)
    ✔ transaksi @done (18-11-22 09:57)
    ✔ anggota ( perbaiki primary key menjadi UUID pada id_anggota sedangkan nim adalah nilai keduanya sebagai patokan dan tidak bisa d gantikan lagi nilainya tetap) @done (18-11-22 09:57)
-   ☐ user ( untuk login pada sistem)
+   ✔ user ( untuk login pada sistem) @done (18-11-30 17:01)
  
  permasalahan :
    ✔ pada menu tambah buku "Column count doesn't match value count at row 1" @done (18-11-10 11:05)
@@ -33,3 +34,4 @@ video yang sudah d tonotn :
    ✔ permasalahan perhitungan selisih terlambat yang ada @done (18-11-22 09:58)
    ✔ pada transaksi/tambah.php ada permasalah pada cek transaksi @done (18-11-24 11:17)
    ✔ pada menu simpan transaksi data belum bsia di simpan dan bagaimana data dapat dapat di update pada bagian buku - jumlah buku berkurang @done (18-11-24 13:25)
+   ☐ membuat laporan ke pdf

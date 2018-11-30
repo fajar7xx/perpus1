@@ -1,4 +1,6 @@
-<?php  
+<?php 
+session_start();
+
 require_once 'config/config.php';
 require_once 'libs/vendor/autoload.php';
 include 'config/function.php';
@@ -7,6 +9,7 @@ use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
 
 
+if($_SESSION['admin'] || $_SESSION['user']):
 ?>
 
 <!doctype html>
@@ -36,7 +39,7 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
       <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="btn btn-danger" href="#">Logout</a>
+          <a class="btn btn-danger" href="logout.php">Logout</a>
         </li>
       </ul>
     </nav>
@@ -46,7 +49,7 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="index.php">
+                <a class="nav-link" href="index.php">
                   <i class="fa fa-tachometer-alt"></i>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
@@ -128,9 +131,12 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
               elseif($aksi == "kembali"){
                 include "page/transaksi/kembali.php";
               }
-              elseif($aksi == "hapus"){
-                include "page/transaksi/hapus.php";
+              elseif($aksi == "perpanjang"){
+                include "page/transaksi/perpanjang.php";
               }
+            }
+            elseif($page==""){
+              include "home.php";
             }
             ?>
 
@@ -166,3 +172,9 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
     </script>
   </body>
 </html>
+
+<?php  
+else:
+  header("location: login.php");
+endif;
+?>

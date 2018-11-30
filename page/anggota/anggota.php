@@ -9,7 +9,9 @@ $sql_anggota = mysqli_query($koneksi, $query_anggota) or die(mysqli_error($konek
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
   <h3>Data Anggota</h3>
   <div class="btn-toolbar mb-2 mb-md-0">
-    <a class="btn btn-primary" href="?page=anggota&aksi=tambah" role="button"><i class="fa fa-plus-square mr-1"></i>Tambah Anggota</a>    
+    <a class="btn btn-primary" href="?page=anggota&aksi=tambah" role="button"><i class="fa fa-plus-square mr-1"></i>Tambah Anggota</a>  
+    <a class="btn btn-outline-info ml-2" href="./laporan/laporan.php" role="button"><i class="fa fa-download mr-1"></i>Export ke Excel</a>
+    <a class="btn btn-outline-success ml-2" href="./laporan/laporanpdf.php" role="button"><i class="fa fa-download mr-1"></i>Export ke pdf</a>    
   </div>
 </div>
 
